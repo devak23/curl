@@ -1,0 +1,31 @@
+Normal curl:
+curl https://jsonplaceholder.typicode.com/posts
+curl https://jsonplaceholder.typicode.com/posts/3
+
+Prints all the header:
+curl -i https://jsonplaceholder.typicode.com/posts/3 
+
+To just get the header:
+curl --head https://jsonplaceholder.typicode.com/posts/3
+
+OR:
+curl -I https://jsonplaceholder.typicode.com/posts/3
+
+To copy the resource into a file:
+curl --output 4.json https://jsonplaceholder.typicode.com/posts/3
+OR:
+curl -o 4.json https://jsonplaceholder.typicode.com/posts/4
+OR:
+curl -O https://jsonplaceholder.typicode.com/posts/5
+
+To download an image:
+curl -O https://www.geek.com/wp-content/uploads/2017/08/Marvel-vs-Capcom-Infinite-Chun-Li-new-face-625x352.jpg
+
+To make a post call:
+curl --data "title=Hello&body=Hello world" https://jsonplaceholder.typicode.com/posts/
+
+To update data:
+curl --data "title=Hi there" -X PUT https://jsonplaceholder.typicode.com/posts/101
+
+To delete a data element:
+curl -X DELETE https://jsonplaceholder.typicode.com/posts/100
